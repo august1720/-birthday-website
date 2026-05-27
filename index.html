@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday May Say Rar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pyidaungsu:wght@400;700&family=Dancing+Script:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    
+    <style>
+        :root {
+            --main-pink: #ff758f;
+            --soft-pink: #ffb3c1;
+            --glass: rgba(255, 255, 255, 0.25);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #fce4ec 0%, #ffb3c1 100%);
+            font-family: 'Pyidaungsu', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Animated Background Hearts */
+        .bg-heart {
+            position: absolute;
+            color: rgba(255, 117, 143, 0.3);
+            pointer-events: none;
+            z-index: 0;
+            animation: floatUp 6s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) scale(0); opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+        }
+
+        .main-card {
+            width: 90%;
+            max-width: 400px;
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 30px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+            animation: slideIn 1.2s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .photo-frame {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 8px;
+            background: white;
+            box-shadow: 0 8px 20px rgba(255, 117, 143, 0.3);
+            position: relative;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff758f;
+        }
+
+        /* ပုံကို ဖြည်းဖြည်းချင်း zoom ဖြစ်နေစေတဲ့ animation */
+        .photo-frame img {
+            animation: softPulse 4s ease-in-out infinite;
+        }
+
+        @keyframes softPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            color: #d81b60;
+            font-size: 2.8em;
+            margin: 10px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .tagline {
+            font-family: 'Dancing Script', cursive;
+            color: #ff4081;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .wish-text {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            line-height: 1.7;
+            color: #444;
+            text-align: justify;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff758f;
+        }
+
+        .footer {
+            font-weight: bold;
+            color: #c2185b;
+            font-size: 1.1em;
+        }
+
+        .btn-magic {
+            background: linear-gradient(45deg, #ff4d6d, #ff758f);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+            margin-top: 15px;
+        }
+
+        .btn-magic:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 77, 109, 0.6);
+        }
+
+        /* Music control hidden */
+        #music { display: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bdayMusic" loop>
+        <source src="https://www.chosic.com/wp-content/uploads/2021/05/Happy-Birthday-to-You.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="main-card">
+        <div class="photo-frame">
+            <!-- ဓာတ်ပုံနေရာတွင် အောက်ပါ IMAGE_URL_HERE ကို ဖျက်ပြီး မိမိပုံ link ထည့်ပါ -->
+            <img src="/storage/emulated/0/Android/data/com.fazil.htmleditor/files/Documents/birthday.html/media/images/IMG_20260527_194040_537.jpg" alt="May Say Rar">
+        </div>
+
+        <h1>May Say Rar</h1>
+        <div class="tagline">Happy Birthday Lovely Girl Friend 💖</div>
+
+        <div class="wish-text">
+            Happy birthday မူချီရေ🎂💐<br>
+            ဒီနေ့လို ထူးခြားတဲ့နေ့မှာ မွေးနေ့ရှင်လေးရဲ့မျက်နှာလေး အမြဲပြုံးနေပါစေ။
+            စိတ်ချမ်းသာမှုတွေ၊ အောင်မြင်မှုတွေ၊ အချစ်စစ်တွေနဲ့ ပြည့်နှက်နေတဲ့ ဘဝလေးကို ပိုင်ဆိုင်ပါစေလို့ ဆုတောင်းပေးတယ်နော်။
+            နောက်နှစ်တွေအထိ အခုလိုပဲ ချစ်စရာကောင်းပြီး ရွှင်လန်းနေတဲ့ သူငယ်ချင်းအဖြစ် အတူရှိနေပါ့မယ်။
+            ပျော်ရွှင်စရာ မွေးနေ့လေးဖြစ်ပါစေ။
+        </div>
+
+        <div class="footer">From Koswe ❤️🎁</div>
+
+        <button class="btn-magic" onclick="magicButton()">မွေးနေ့လက်ဆောင်ဖွင့်ရန် ✨</button>
+    </div>
+
+    <script>
+        // Floating Background Hearts Generator
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('bg-heart');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.fontSize = Math.random() * 20 + 15 + 'px';
+            heart.style.animationDuration = Math.random() * 3 + 4 + 's';
+            document.body.appendChild(heart);
+
+            setTimeout(() => { heart.remove(); }, 6000);
+        }
+        setInterval(createHeart, 500);
+
+        // Surprise Function
+        function magicButton() {
+            // Play Music
+            const music = document.getElementById('bdayMusic');
+            music.play();
+
+            // Fireworks/Confetti effect
+            var duration = 5 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+
+                var particleCount = 50 * (timeLeft / duration);
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+
+            alert("Happy Birthday Mu Chi! 🎉🎂 မွေးနေ့မှာ အလိုချင်ဆုံးဆုတွေ ပြည့်ဝပါစေနော်!");
+        }
+    </script>
+</body>
+</html>
